@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simplication</title>
+  <link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+
+<body>
+  <div id="header">
+    <a href="https://www.iniad.org"><img src="http://moocs-files.iniad.org/2018/CS2/web/iniad.png" alt="ロゴ"></a>
+    <p><a href="https://moocs.iniad.org/courses">MOOCs</a></p>
+    <p><a href="https://iniad-lectures.slack.com">Slack</a></p>
+  </div>
+  <div id="container">
+    <h2><br>Click to start the online lesson.</h2>
+    <span id="view_todayE"></span>
+
+    <script type="text/javascript">
+      document.getElementById("view_todayE").innerHTML = getTodayE();
+
+      function getTodayE() {
+        var now = new Date();
+        var year = now.getFullYear();
+        var mon = now.getMonth();
+        var day = now.getDate();
+        var you = now.getDay();
+        var youbi = new Array("Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.");
+        var month = new Array("Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.",
+          "Dec.");
+        var s = month[mon] + " " + day + ", " + year + " (" + youbi[you] + ")";
+        return s;
+      }
+    </script>
+    <table>
+      <tr>
+        <th></th>
+        <th>Mon.</th>
+        <th>Tue.</th>
+        <th>Wed.</th>
+        <th>Thu.</th>
+        <th>Fri.</th>
+      </tr>
+      <tr>
+        <th>9:00~10:30</th>
+        <td><a href="https://meet.google.com/zey-yskc-bgj">LSII (3101)</a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href="https://meet.google.com/ffx-doou-pxt">確率・統計学B (講義室)</a></td>
+        <td><a href=""></a></td>
+      </tr>
+      <tr>
+        <th>10:40~12:10</th>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href="https://classroom.google.com/c/Mzk0MTI2NzIzNzYx">LSII</a></td>
+        <td><a href=""></a></td>
+      </tr>
+      <tr>
+        <th>12:15~12:55</th>
+        <td><a href="http://t.rt-c.co.jp/akabane/">🍴</a></td>
+        <td><a href="http://t.rt-c.co.jp/akabane/">🍴</a></td>
+        <td><a href="http://t.rt-c.co.jp/akabane/">🍴</a></td>
+        <td><a href="http://t.rt-c.co.jp/akabane/">🍴</a></td>
+        <td><a href="http://t.rt-c.co.jp/akabane/">🍴</a></td>
+      </tr>
+      <tr>
+        <th>13:00~14:30</th>
+        <td><a href="https://meet.google.com/ikv-xmtz-syj">CS概論II</a></td>
+        <td><a href="https://stream.meet.google.com/stream/4f75a46d-7d3f-4fed-9643-dcac309a1bbc">情報と法</a></td>
+        <td><a href="https://meet.google.com/zuw-uhvj-kpf">情報連携実習IB (3102)</a></td>
+        <td><a href=""></a></td>
+        <td><a href="https://meet.google.com/ugn-agit-euq">情報連携基礎演習II (3102)</a></td>
+      </tr>
+      <tr>
+        <th>14:45~16:15</th>
+        <td><a href=""></a></td>
+        <td><a href="https://stream.meet.google.com/stream/b94b5e54-d49c-4a63-8d54-c5d545de6414">コンピュータ社会概論</a></td>
+        <td><a href=""></a></td>
+        <td><a href="https://meet.google.com/ikv-xmtz-syj">CS概論II (2313)</a></td>
+        <td><a href=""></a></td>
+      </tr>
+      <tr>
+        <th>16:30~18:00</th>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+      </tr>
+      <tr>
+        <th>18:15~19:45</th>
+        <td><a href=""></a></td>
+        <td><a href="https://classroom.google.com/c/MzkwODI4NDIwMTY0">RWII</a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+        <td><a href=""></a></td>
+      </tr>
+    </table>
+</body>
+
+</html>
