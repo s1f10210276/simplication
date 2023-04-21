@@ -19,5 +19,6 @@ function getNow() {
     var hour = now.getHours();
     var min = set2fig(now.getMinutes());
     var s = mon + "月" + day + "日" + " (" + youbi[you] + ")　" + hour + ":" + min;
-    return s;
+    document.getElementById("view_time").innerHTML = s;
 }
+setInterval('getNow()', 1000);
