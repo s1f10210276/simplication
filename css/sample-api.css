@@ -28,16 +28,18 @@ p {
 }
 
 button {
-  background-color: #fff;
-  border-color: #9d9c8f;
-  color: #9d9c8f;
+  border: 2px solid #9d9c8f;
   margin-left: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
+  background: #fff;
+  color: #9d9c8f;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #9d9c8f80;
+  border: 2px solid transparent;
+  background: #9d9c8f80;
 }
 
 span {
