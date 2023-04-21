@@ -1,7 +1,9 @@
+html,
 body {
     background-color: #313360;
     background-size: cover;
     font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+    height: 100%;
     margin: 0;
 }
 
@@ -46,7 +48,7 @@ span {
     color: #fff;
 }
 
-div#header {
+#header {
     background-color: #17194c;
     display: flex;
     height: 40px;
@@ -60,4 +62,19 @@ div#header {
 
 #header img {
     height: 100%;
+}
+
+#container {
+    padding-bottom: 140px;
+}
+
+#footer {
+    clear: left;
+    background-color: #17194c;
+    text-align: center;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
 }

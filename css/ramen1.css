@@ -1,0 +1,25 @@
+html,
+body {
+    background-color: yellow;
+    font-family: serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#container {
+    padding-bottom: 140px;
+}
+
+#footer {
+    clear: left;
+    background-color: #17194c;
+    text-align: center;
+}
+
+#footer a {
+    color: #fff;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+    text-decoration: none;
+}
