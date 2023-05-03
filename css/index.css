@@ -48,6 +48,14 @@ span {
     color: #fff;
 }
 
+.result {
+    color: #fff;
+    background-color: #9d9c8f;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+}
+
 #header {
     background-color: #17194c;
     display: flex;
