@@ -35,7 +35,7 @@ function callRoomStatusAPI(url, method, userid, userpw, callback) {
         });
         callback({
           status : 'success',
-          description : '⭕️ 受講場所の環境は以下の通りです。',
+          description : '⭕️ 受講場所のセンサー情報取得に成功しました。',
           illuminance : results.illuminance,
           humidity : results.humidity,
           airpressure : results.airpressure,
@@ -46,8 +46,8 @@ function callRoomStatusAPI(url, method, userid, userpw, callback) {
         if (xhr.status === 503) {
           callback({
             status : 'success',
-            description : '❌ 外部のネットワークからアクセスしているため表示できません。',
-          });          
+            description : '❌ 受講場所のセンサー情報取得に失敗しました。',
+          });
         } else {
           let err = JSON.parse(xhr.responseText);
           let errorMsg = '❌ [' + err.status + '] '  + err.description ;

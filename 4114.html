@@ -4,32 +4,35 @@
 <head>
   <meta charset="utf-8" />
   <title>4114</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-  <div id="header">
-    <a href="https://www.iniad.org"><img src="http://moocs-files.iniad.org/2018/CS2/web/iniad.png" alt="ロゴ"></a>
-    <h3><span id="view_time"></span></h3>
+  <header>
+    <a href="index.html"><span id="view_time"></span></a>
+  </header>
+
+  <h1>4114教室</h1>
+  <script>
+    let roomNum = '4114';
+    onload = function () {
+      setInterval(getRoomStatus(), 1000);
+    }
+  </script>
+  <div class="result">
+    <h2>🌡 <span id="room-temperature"></span> ℃</h2><br />
+    <h2>💧 <span id="room-humidity"></span> %</h2><br />
+    <h2>🌀 <span id="room-airpressure"></span> hPa</h2><br />
+    <h2>💡 <span id="room-illuminance"></span> lx</h2>
   </div>
-  <div id="container">
-    <h1>4114教室</h1>
-    <script>
-      let roomNum = '4114';
-      onload = function () {
-        setInterval(getRoomStatus(), 1000);
-      }
-    </script>
-    <div class="result">
-      <h2>🌡 <span id="room-temperature"></span> ℃</h2><br />
-      <h2>💧 <span id="room-humidity"></span> %</h2><br />
-      <h2>🌀 <span id="room-airpressure"></span> hPa</h2><br />
-      <h2>💡 <span id="room-illuminance"></span> lx</h2>
-    </div>
-  </div>
-  <div id="footer">
-    <h3><a href="index.html">INIAD</a></h3>
-  </div>
+  <footer>
+    <ul class="footer-menu">
+      <li><a href="index.html">HOME</a> ｜</li>
+      <li><a href="https://www.iniad.org">INIAD</a> ｜</li>
+      <li><a href="https://moocs.iniad.org">MOOCs</a></li>
+    </ul>
+    <p>© All rights reserved by s1f10210276.</p>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/iniad_api.js"></script>
   <script type="text/javascript" src="js/room_status.js"></script>
