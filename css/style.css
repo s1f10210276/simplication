@@ -35,7 +35,7 @@ table {
 
 th {
     background: #9d9c8f;
-    font-size: 2.5vw
+    font-size: 2vw
 }
 
 td {
@@ -47,7 +47,7 @@ button {
     border: 2px solid transparent;
     border-radius: 5px;
     background: #313360;
-    font-size: 3.3vw;
+    font-size: 3vw;
     color: #fff;
     cursor: pointer;
     width: 100%;
