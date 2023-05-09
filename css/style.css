@@ -18,13 +18,17 @@ body {
 }
 
 h1 {
-    font-size: 4.5vw;
+    font-size: 4.5vw
 }
 
 a {
     color: #fff;
-    font-size: x-large;
+    font-size: large;
     text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
 }
 
 table {
@@ -33,19 +37,19 @@ table {
 }
 
 th {
-    background: #9d9c8f;
+    background-color: #9d9c8f;
     font-size: 2vw
 }
 
 td {
-    height: 100px;
-    background: #fff
+    height: 50px;
+    background-color: #fff
 }
 
 button {
     border: 2px solid transparent;
     border-radius: 5px;
-    background: #313360;
+    background-color: #313360;
     font-size: 3vw;
     color: #fff;
     cursor: pointer;
@@ -55,7 +59,7 @@ button {
 
 button:hover {
     border: 2px solid #313360;
-    background: #fff;
+    background-color: #fff;
     color: #313360
 }
 
@@ -67,7 +71,7 @@ button:hover {
 
 header {
     width: 100%;
-    height: 50px;
+    height: 35px;
     padding: 5px 0;
     background-color: #17194c;
     display: flex;
@@ -80,6 +84,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #17194c;
+    font-size: 1vw;
     color: #fff;
     bottom: 0
 }
