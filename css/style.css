@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 4.5vw
+    font-size: 3vw
 }
 
 a {
@@ -84,7 +84,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #17194c;
-    font-size: 1vw;
+    font-size: small;
     color: #fff;
     bottom: 0
 }

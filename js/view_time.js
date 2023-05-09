@@ -11,14 +11,20 @@ function set2fig(num) {
 }
 
 function getNow() {
-    var now = new Date();
-    var mon = now.getMonth() + 1;
-    var day = now.getDate();
-    var you = now.getDay();
+    var mon = new Date().getMonth() + 1;
+    var day = new Date().getDate();
+    var you = new Date().getDay();
     var youbi = new Array("日", "月", "火", "水", "木", "金", "土");
-    var hour = now.getHours();
-    var min = set2fig(now.getMinutes());
+    var hour = new Date().getHours();
+    var min = set2fig(new Date().getMinutes());
     var s = mon + "月" + day + "日" + " (" + youbi[you] + ")　" + hour + ":" + min;
     document.getElementById("view_time").innerHTML = s;
+    if (hour <= 11) {
+        document.getElementById("greet").textContent ="おはようございます。";
+    } else if (hour <= 17) {
+        document.getElementById("greet").textContent ="こんにちは。";
+    } else {
+        document.getElementById("greet").textContent ="こんばんは。";
+    }
 }
 setInterval('getNow()', 1000);
