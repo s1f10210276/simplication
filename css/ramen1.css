@@ -11,6 +11,7 @@ body {
     font-family: "Helvetica","Arial",sans-serif;
     background-color: yellow;
     font-style: normal;
+    text-align: center;
     margin: 0;
     padding: 0
 }
@@ -32,7 +33,6 @@ footer {
     height: 100px;
     background-color: #17194c;
     color: #fff;
-    text-align: center;
     bottom: 0
 }
 

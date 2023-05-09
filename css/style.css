@@ -12,13 +12,13 @@ body {
     background-color: #313360;
     color: #fff;
     font-style: normal;
+    text-align: center;
     margin: 0;
     padding: 0
 }
 
 h1 {
     font-size: 4.5vw;
-    text-align: center
 }
 
 a {
@@ -29,7 +29,6 @@ a {
 
 table {
     table-layout: fixed;
-    text-align: center;
     width: 100%
 }
 
@@ -62,7 +61,6 @@ button:hover {
 
 .result {
     background-color: #9d9c8f;
-    text-align: center;
     margin: 5px;
     padding: 2px
 }
@@ -83,7 +81,6 @@ footer {
     height: 100px;
     background-color: #17194c;
     color: #fff;
-    text-align: center;
     bottom: 0
 }
 
