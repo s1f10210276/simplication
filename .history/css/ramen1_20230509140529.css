@@ -1,13 +1,9 @@
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
+html,
 body {
-    margin: 0;
-    padding: 0;
     background-color: yellow;
     height: 100%;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
