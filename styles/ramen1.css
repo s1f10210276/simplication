@@ -22,25 +22,35 @@ a {
     text-decoration: none
 }
 
-a:hover {
-    text-decoration: underline
-}
-
 img {
     max-width: 100%;
-    display: block;
     margin: 0
 }
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 60px;
+    padding: 8px;
     background-color: #17194c;
-    font-size: 1vw;
-    color: #fff;
-    bottom: 0
+    color: #6e6e73;
+    font-size: smaller;
+    position: relative;
+    z-index: 1;
+}
+
+footer a:hover {
+    text-decoration: underline
 }
 
 ul.footer-links li {
+    border-left: 1px solid;
+    margin-left: 7px;
+    padding-left: 11px;
     display: inline
+}
+
+ul.footer-links li:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0
 }
