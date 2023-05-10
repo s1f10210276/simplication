@@ -35,7 +35,7 @@ function callRoomStatusAPI(url, method, userid, userpw, callback) {
         });
         callback({
           status : 'success',
-          description : '⭕️ 受講場所のセンサー情報取得に成功しました。',
+          description : '受講場所のセンサー情報取得に成功しました。\nSucceeded getting room status.',
           illuminance : results.illuminance,
           humidity : results.humidity,
           airpressure : results.airpressure,
@@ -46,11 +46,11 @@ function callRoomStatusAPI(url, method, userid, userpw, callback) {
         if (xhr.status === 503) {
           callback({
             status : 'success',
-            description : '❌ 受講場所のセンサー情報取得に失敗しました。',
+            description : '受講場所のセンサー情報取得に失敗しました。\nFailed getting room status.',
           });
         } else {
           let err = JSON.parse(xhr.responseText);
-          let errorMsg = '❌ [' + err.status + '] '  + err.description ;
+          let errorMsg = 'エラー\n[' + err.status + '] '  + err.description ;
           callback({
             status : 'fail',
             description : errorMsg,
