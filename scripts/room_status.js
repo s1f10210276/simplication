@@ -20,7 +20,7 @@ function displayRoomStatus(result) {
   }
 }
 
-function getRoomStatus() {
+function getRoomStatus(roomNum) {
   let userid = 's1F102102762@iniad.org';
   let userpw = 'RionINIAD276';
   let url = BASE_URL + '/sensors/' + roomNum;

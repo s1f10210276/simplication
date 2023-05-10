@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>TOP</title>
+  <title>Simplication</title>
 </head>
 
 <body>
@@ -46,8 +46,8 @@
         <h2>２</h2><br>10:40→12:10
       </th>
       <td></td>
-      <td><button onclick="location.href='2202.html'">講義室</button></td>
-      <td><button onclick="location.href='2202.html'">講義室</button></td>
+      <td><button onclick="getRoomStatus('2202')">講義室</button></td>
+      <td><button onclick="getRoomStatus('2202')">講義室</button></td>
       <td></td>
       <td><button onclick="location.href='4114.html'">4114</button></td>
     </tr>
@@ -57,7 +57,7 @@
       </th>
       <td></td>
       <td><button onclick="location.href='ramen1.html'">🍜</button></td>
-      <td><button onclick="location.href='http://t.rt-c.co.jp/akabane/'">🍽</button></td>
+      <td><button onclick="getRoomStatus('1401')">🍽</button></td>
       <td></td>
       <td></td>
     </tr>
@@ -67,7 +67,7 @@
       </th>
       <td></td>
       <td></td>
-      <td><button onclick="location.href='1411.html'">ホール</button></td>
+      <td><button onclick="getRoomStatus('1411')">ホール</button></td>
       <td></td>
       <td></td>
     </tr>
@@ -76,9 +76,9 @@
         <h2>４</h2><br>14:45→16:15
       </th>
       <td></td>
-      <td><button onclick="location.href='2202.html'">講義室</button></td>
+      <td><button onclick="getRoomStatus('2202')">講義室</button></td>
       <td><button onclick="location.href='3101.html'">3101</button></td>
-      <td><button onclick="location.href='2202.html'">講義室</button></td>
+      <td><button onclick="getRoomStatus('2202')">講義室</button></td>
       <td></td>
     </tr>
     <tr>
@@ -109,7 +109,10 @@
     </ul>
     <p>Copyright © s1f10210276. All rights reserved.</p>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/iniad_api.js" type="text/javascript" charset="utf-8"></script>
+  <script src="scripts/room_status.js" type="text/javascript" charset="utf-8"></script>
   <script src="scripts/view_time.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
