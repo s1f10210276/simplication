@@ -1,5 +1,3 @@
-let BASE_URL = "https://edu-iot.iniad.org/api/v1";
-
 function displayRoomStatus(result) {
   let temperature = document.getElementById('room-temperature')
   let humidity = document.getElementById('room-humidity')
@@ -23,6 +21,10 @@ function displayRoomStatus(result) {
 function getRoomStatus(roomNum) {
   let userid = 's1F102102762@iniad.org';
   let userpw = 'RionINIAD276';
-  let url = BASE_URL + '/sensors/' + roomNum;
+  let url = 'https://edu-iot.iniad.org/api/v1' + '/sensors/' + roomNum;
   callRoomStatusAPI(url, 'GET', userid, userpw, displayRoomStatus)
+}
+
+function cafeteria() {
+  alert('営業時間: 平日 11:00~14:00');
 }

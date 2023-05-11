@@ -1,5 +1,3 @@
-document.getElementById("view_time").innerHTML = getNow();
-
 function set2fig(num) {
     var ret;
     if (num < 10) {
