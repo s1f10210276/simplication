@@ -16,7 +16,7 @@ function getNow() {
   var hour = new Date().getHours();
   var min = set2fig(new Date().getMinutes());
   var s = mon + "月" + day + "日" + " (" + youbi[you] + ")　" + hour + ":" + min;
-  document.getElementById("view_time").innerHTML = s;
+  document.getElementById("time").innerHTML = s;
   if (hour <= 11) {
       document.getElementById("greet").textContent ="おはようございます。";
   } else if (hour <= 17) {
